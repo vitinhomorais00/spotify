@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+    	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<title>Projeto Spotify</title>
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="block-header">
+				<span>Spotify Premium</span>
+			</div>
+		</header>
+
+		<div class="block-conteudo">
+			<section class="left">
+				<div class="block-navegacao">
+					<div class="block-navegacao-int">
+						<a href="javascript:void(0)" class="link inicio">
+							<i class="fas fa-home"></i> <span>Início</span>
+						</a>
+					</div>
+
+					<div class="block-navegacao-int">
+						<a href="javascript:void(0)" class="link navegar">
+							<i class="fas fa-window-maximize"></i> <span>Navegar</span>
+						</a>
+					</div>
+
+					<div class="block-navegacao-int">
+						<a href="javascript:void(0)" class="link radio">
+							<i class="fas fa-broadcast-tower"></i> <span>Rádio</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="block-navegacao">
+					<ul class="navegacao">
+						<li class="title">Sua Biblioteca</li>
+						<li class="int"> <a href="javascript:void(0)">Feito para você</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Tocadas recentemente</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Músicas curtidas</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Álbuns</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Artistas</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Podcasts</a> </li>
+					</ul>
+				</div>
+
+				<div class="block-navegacao">
+					<ul class="navegacao">
+						<li class="title">Playlists</li>
+						<li class="int"> <a href="javascript:void(0)">Justin Bieber</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Mais tocadas</a> </li>
+						<li class="int"> <a href="javascript:void(0)">50 Cent</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Post Malone</a> </li>
+						<li class="int action"> <a href="javascript:void(0)">Vitinho</a> </li>
+						<li class="int"> <a href="javascript:void(0)">Akon</a> </li>
+					</ul>
+				</div>
+
+				<div class="block-navegacao">
+					<div class="block-nova-playlist">
+						<span><i class="fas fa-plus-circle"></i> Nova Playlist</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="mid">
+				<div class="block-search">
+					<div class="block-seta">
+						<i class="fas fa-chevron-left left"></i> <i class="fas fa-chevron-right right"></i>
+					</div>
+
+					<div class="block-input-search">
+						<input id="search" type="search" name="q" value="" class="input-text" maxlength="128" placeholder="Buscar">
+						<i class="fas fa-search"></i>
+					</div>
+
+					<div class="block-avatar">
+						<div class="block-img">
+							<img src="img/me.jpg">
+						</div>
+						<div class="block-name">
+							<span>Vitor Morais</span>
+						</div>
+						<div class="seta-bottom">
+							<i class="fas fa-chevron-down down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="conteudo-mid">
+					<div class="block-left">
+						<img src="img/capa.jpeg">
+					</div>
+
+					<div class="block-right">
+						<div class="block-top">
+							<span class="name-playlist">Playlist</span>
+							<span class="title-playlist">Vitinho</span>
+
+							<span class="msg">Criada por: <strong>Vitor Morais</strong> • 154 músicas, 9h 5m</span>
+						</div>
+
+						<div class="block-bottom">
+							<div class="block-left">
+								<button class="pause">Pause</button>
+								<span class="dots">...</span>
+							</div>
+
+							<div class="block-right">
+								<span class="seguidores">Seguidores: 3</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="block-conteudo-musicas">
+						<div class="block-title">
+							<span class="titulo">Título</span>
+							<span class="artista">Artista</span>
+							<span class="album">Álbum</span>
+							<span class="data"><i class="fas fa-calendar-alt"></i></span>
+							<span class="time"><i class="far fa-clock"></i></span>
+						</div>
+
+						<div class="block-list active">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+
+						<div class="block-list">
+							<div class="block-title-music">
+								<span>cedo pra parar</span>
+							</div>
+
+							<div class="block-artista-music">
+								<span>Luccas Carlos</span>
+							</div>
+
+							<div class="block-album-music">
+								<span>1 Milhão de Sonho$</span>
+							</div>
+
+							<div class="block-date-music">
+								<span>2020-04-10</span>
+							</div>
+
+							<div class="block-time-music">
+								<span>3:11</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="right">
+				<div class="block-navegacao right">
+					<div class="block-title">
+						<span>Atividade de amigos</span>
+					</div>
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Justin Bieber</span>
+							<span class="musica">Yummy</span>
+						</div>
+
+						<div class="action">
+							<i class="fas fa-volume-up"></i>
+						</div>
+					</div>
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Wesley Safadão</span>
+							<span class="musica">Maria Santinha</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">1h</span>
+						</div>
+					</div>
+
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Luccas Carlos</span>
+							<span class="musica">7k</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">3h</span>
+						</div>
+					</div>
+
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Luccas Carlos</span>
+							<span class="musica">Fala</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">12h</span>
+						</div>
+					</div>
+
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Ferrugem</span>
+							<span class="musica">Chop Garotinho</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">2d</span>
+						</div>
+					</div>
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Luccas Carlos</span>
+							<span class="musica">7k</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">5d</span>
+						</div>
+					</div>
+
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Luccas Carlos</span>
+							<span class="musica">Fala</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">7d</span>
+						</div>
+					</div>
+
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Ferrugem</span>
+							<span class="musica">Chop Garotinho</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">14d</span>
+						</div>
+					</div>
+
+					<div class="block-avatar">
+						<div class="img">
+							<img src="img/me.jpg">
+						</div>
+
+						<div class="block-name">
+							<span class="name">Vitor Morais</span>
+							<span class="artista">Luccas Carlos</span>
+							<span class="musica">Fala</span>
+						</div>
+
+						<div class="action">
+							<span class="hour">17d</span>
+						</div>
+					</div>
+
+
+
+				</div>
+			</section>
+
+			<section class="bottom-fixed">
+				<div class="block-conteudo-fixed">
+					<div class="block-left">
+						<div class="block-top">
+							<span class="name-music">cedo pra parar <i class="far fa-heart"></i></span>
+						</div>
+						<div class="block-bottom">
+							<span class="name-artist">Luccas Carlos</span>
+						</div>
+					</div>
+
+					<div class="block-mid">
+						<div class="block-top">
+							<div class="block-icon">
+								<i class="fas fa-random"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="fas fa-play rotate"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="far fa-pause-circle"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="fas fa-play"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="fas fa-repeat"></i>
+							</div>
+						</div>
+
+						<div class="block-bottom">
+							<div class="block-time">
+								<span>1:00</span>
+							</div>
+
+							<div class="block-linha">
+								<div class="block-linha-int"></div>
+							</div>
+
+							<div class="block-time">
+								<span>3:58</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="block-right">
+						<div class="block-top">
+							<div class="block-icon">
+								<i class="fas fa-list"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="fas fa-tv"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="fas fa-volume-up"></i>
+							</div>
+
+							<div class="block-icon">
+								<i class="fas fa-compress-alt"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+	</body>
+</html>
